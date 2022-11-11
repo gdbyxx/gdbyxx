@@ -15,8 +15,8 @@ while (idx < 26) {
     const buttons = document.createElement('button');
     div.className = 'ys';
     buttons.textContent = '编辑';
-    if (key[zm[idx].toLowerCase().toString()]) {
-        img.src = `http://${key[zm[idx].toLowerCase().toString()]}/favicon.ico`;
+    if (has[zm[idx].toLowerCase().toString()]) {
+        img.src = `http://${has[zm[idx].toLowerCase().toString()]}/favicon.ico`;
     } else {
         img.src = '//i.loli.net/2017/11/10/5a05afbc5e183.png';
     }
