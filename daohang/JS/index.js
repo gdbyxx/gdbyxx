@@ -45,6 +45,7 @@ while (idx < 26) {
     buttons.id = zm[idx];
     idx++;
 }
+
 document.onkeydown = (e) => {
     console.log(e['key']);
     if (e.keyCode >= 65 && e.keyCode <= 90) {
