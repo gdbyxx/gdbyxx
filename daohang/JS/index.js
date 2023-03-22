@@ -48,6 +48,6 @@ document.onkeydown = (e) => {
         let web = has[keys];
         console.log(has);
         console.log(web);
-        window.open(web, '_blank');
+        window.open("https://"+web, '_blank');
     }
 }
