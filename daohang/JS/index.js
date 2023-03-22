@@ -32,15 +32,9 @@ while (idx < 26) {
     buttons.onclick = (e) => {
         let key = e['target']['id'].toLowerCase();
         let x = prompt('请输入一个网址');
-        if (/^www\./.test(x)) {
-            has[key] = x;
-            img.src = `http://${x}/favicon.ico`;
-            localStorage.setItem('keyss', JSON.stringify(has));
-        } else if (x == null) {
-            return;
-        } else {
-            alert('请输入正确网址！');
-        }
+        has[key] = x;
+        img.src = `http://${x}/favicon.ico`;
+        localStorage.setItem('keyss', JSON.stringify(has));        
     }
     buttons.id = zm[idx];
     idx++;
