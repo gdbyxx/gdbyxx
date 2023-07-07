@@ -40,7 +40,7 @@ while (idx < 26) {
     idx++;
 }
 
-document.onkeydown = (e) => {
+window.onkeydown = (e) => {
     console.log(e['key']);
     if (e.keyCode >= 65 && e.keyCode <= 90) {
         let keys = e['key'];
